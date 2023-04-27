@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/react-hooks": "^4.0.0",
+    "apollo-boost": "^0.4.9",
+    "apollo-server-express": "^2.15.0",
+    "bcrypt": "^5.0.0",
+    "concurrently": "^8.0.1",
+    "express": "^4.17.1",
+    "graphql": "^15.8.0",
+    "graphql-tag": "^2.12.6",
+    "if-env": "^1.0.4",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
