@@ -1,17 +1,21 @@
 import React from 'react';
-import {
-  Container,
-  Card,
-  Button,
-  Row,
-  Col
-} from 'react-bootstrap';
+// import {
+//   Button,
+//   Row,
+//   Col,
+//   Container,
+//   Card
+// } from 'react-bootstrap';
 import Auth from '../utils/auth';
 import { removeBookId } from '../utils/localStorage';
 import { useQuery, useMutation } from "@apollo/react-hooks";
 import { GET_ME } from "../utils/queries";
 import { REMOVE_BOOK } from "../utils/mutations";
-
+import Row from "react-bootstrap/Row";
+import Button from "react-bootstrap/Button";
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
+import Card from "react-bootstrap/Card";
 
 const SavedBooks = () => {
   const { loading, data } = useQuery(GET_ME);
@@ -26,6 +30,7 @@ const SavedBooks = () => {
     }
 
     try {
+      // eslint-disable-next-line
       const { data } = await removeBook({
         variables: { bookId },
       });
